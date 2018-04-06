@@ -1,0 +1,6 @@
+{
+  "name": "ContactsListItem",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ContactsListItem.js"
+}

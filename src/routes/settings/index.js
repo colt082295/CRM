@@ -9,22 +9,17 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
-import Admin from './Admin';
+import Settings from './Settings';
 
-const title = 'Admin Page';
-const isAdmin = false;
+const title = 'Settings';
 
 function action() {
-  if (!isAdmin) {
-    return { redirect: '/login' };
-  }
-
   return {
-    chunks: ['admin'],
+    chunks: ['settings'],
     title,
     component: (
       <Layout>
-        <Admin title={title} />
+        <Settings title={title} />
       </Layout>
     ),
   };

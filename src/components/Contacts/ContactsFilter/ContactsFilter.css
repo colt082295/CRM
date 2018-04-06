@@ -1,0 +1,24 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  padding: 1em 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+@import '../../variables.css';
+
+.title {
+  margin: 0 0.5em;
+  font-size: 2rem;
+}
+
+.contactsCount {
+  margin: 0 0.5em;
+  align-self: center;
+}

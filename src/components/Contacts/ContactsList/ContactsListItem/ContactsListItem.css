@@ -1,0 +1,12 @@
+@import '../../../variables.css';
+
+.listItem {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+}
+
+.item {
+  margin: 0 0.5em;
+}

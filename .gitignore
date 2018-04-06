@@ -2,6 +2,7 @@
 
 # Dependencies
 node_modules/
+semantic/
 
 # Compiled output
 build

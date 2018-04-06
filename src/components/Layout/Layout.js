@@ -13,9 +13,12 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 
 // external-global styles must be imported in your JS.
 import normalizeCss from 'normalize.css';
+/* eslint-disable */
+import reactVirtualized from 'react-virtualized/styles.css';
+import semantic from '../../../semantic/dist/semantic.min.css';
+/* eslint-enable */
 import s from './Layout.css';
-import Header from '../Header';
-import Feedback from '../Feedback';
+import Navigation from '../Navigation';
 import Footer from '../Footer';
 
 class Layout extends React.Component {
@@ -26,13 +29,12 @@ class Layout extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Navigation />
         {this.props.children}
-        <Feedback />
         <Footer />
       </div>
     );
   }
 }
 
-export default withStyles(normalizeCss, s)(Layout);
+export default withStyles(normalizeCss, semantic, reactVirtualized, s)(Layout);

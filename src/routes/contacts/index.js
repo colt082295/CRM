@@ -9,16 +9,17 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
-import Page from '../../components/Page';
-import about from './about.md';
+import Contacts from './Contacts';
+
+const title = 'Contacts';
 
 function action() {
   return {
-    chunks: ['about'],
-    title: about.title,
+    chunks: ['contacts'],
+    title,
     component: (
       <Layout>
-        <Page {...about} />
+        <Contacts title={title} />
       </Layout>
     ),
   };

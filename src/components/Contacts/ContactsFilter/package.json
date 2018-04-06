@@ -1,0 +1,6 @@
+{
+  "name": "ContactsFilter",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ContactsFilter.js"
+}
